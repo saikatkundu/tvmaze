@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body{
+  background-color: #e0e0e0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box{
+  background-color: #ffffff;
+  margin: 30px;
+  padding: 20px 50px;
+  min-height: calc(100vh - 60px);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchInput,
+.searchInput:focus{
+  background-color: #e0e0e0;
+  border: none;
+  outline: none;
+  text-indent: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardDataContainer{
+  background-color: #e0e0e0;
+  max-height: 260px !important;
+  position: relative;
+  margin: 50px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.imgContainer{
+  position: relative;
+  top: -35px;
+  min-height: 290px;
+  height: 100%;
+  overflow: hidden;
+  max-width: fit-content;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title, .text{
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+}
+.text{
+   -webkit-line-clamp: 4;
+}
+.gray{
+  color: #909090;
+}
+.blue{
+  color: rgb(19, 19, 51);
+}
+.btn-blue{
+  background-color: rgb(19, 19, 51);
+  color: #ffffff;
+}
+.btn-blue:hover{
+  background-color: rgb(13, 13, 32);
+  color: #e9dfdf;
 }
